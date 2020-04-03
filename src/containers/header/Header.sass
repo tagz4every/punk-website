@@ -1,0 +1,100 @@
+header
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    .background-image
+        height: 100%
+        background-image: url("../../assets/fondo.png")
+    .background-color
+        height: 100%
+        width: 100%
+        background-color: rgba(248,67,182,.5)
+        position: absolute
+    .warning-top, .warning-bottom
+        position: absolute
+        width: 100%
+        .top, .bottom
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+            width: 100%
+            height: 20px
+            background-image: url("../../assets/warning.png")
+            background-repeat: repeat-x
+        .top
+            -moz-transform: scaleY(-1)
+            -o-transform: scaleY(-1)
+            -webkit-transform: scaleY(-1)
+            transform: scaleY(-1)
+            filter: FlipV
+            -ms-filter: "FlipV"
+            margin-bottom: 20px
+
+            animation: slide 20s linear infinite
+        .bottom
+            margin-top: 20
+            animation: slide 20s linear infinite
+    .warning-top
+        top: 0
+        margin-top: 20px
+    .warning-bottom
+        bottom: 0
+        margin-bottom: 20px
+
+    @keyframes slide
+        0%
+            background-position: 0 0
+        100%
+            background-position: -420px 0
+
+    .pcloop-bottom, .pcloop-top
+        position: absolute
+        width: 100%
+        height: 100%
+        background-image: url("../../assets/pcloop.png")
+        background-repeat: repeat-x
+        background-position: bottom
+    .pcloop-top
+        top: 0
+        -moz-transform: scaleY(-1)
+        -o-transform: scaleY(-1)
+        -webkit-transform: scaleY(-1)
+        transform: scaleY(-1)
+        filter: FlipV
+        -ms-filter: "FlipV"
+    .pcloop-bottom
+        bottom: 0
+    
+    .grid
+        width: 100%
+        height: 100%
+        display: grid
+        grid-template-columns: 2fr 3fr
+        position: absolute
+        .gato
+            position: relative
+            width: 100%
+            img
+                position: absolute
+                width: 100%
+                height: auto
+                bottom: 0
+        .logo
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            img
+                align-self: center
+
+@media only screen and (max-width: 1000px)
+	header .espacios
+		display: inline
+	.gato
+		display: none
+
+@media only screen and (max-width: 800px)
+	header 
+		height: 600px
+	header .pcloop-bottom, header .pcloop-top 
+		background-size: 80%
