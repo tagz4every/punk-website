@@ -1,0 +1,81 @@
+#contacto
+    .description
+        text-align: center
+        color: white
+        width: 100%
+        font-family: 'Archivo', sans-serif
+        font-size: 25px
+        padding: 0px 300px
+        margin-top: 50px
+    .grid-contact
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 40px
+        padding: 0px 100px
+        margin-top: 50px
+        .form
+            display: flex
+            flex-direction: column
+            input, textarea
+                font-family: 'Archivo', sans-serif
+                padding: 10px
+                border-radius: 5px
+                border: 1px solid black
+                margin-bottom: 10px
+            button
+                margin-top: 30px
+                align-self: center
+                width: 180px
+                padding: 15px 15px
+                border: none
+                text-decoration: none
+                text-align: center
+                color: white
+                font-size: 16px
+                margin: 4px 2px
+                cursor: pointer
+                background-color: rgba(0,0,0,0)
+                border-radius: 5px
+                border: 3px solid white
+                font-family: 'Archivo', sans-serif
+            button:hover
+                background-color: #111010
+        .alternativas
+            .alternativa
+                width: 100%
+                display: grid
+                grid-template-columns: 1fr 3fr
+                .icon, .text
+                    text-align: center
+                    color: white
+                    font-size: 18px
+                    align-self: center
+                .icon
+                    font-size: 30px
+                .text
+                    display: flex
+                    flex-direction: column
+                    font-family: 'Archivo', sans-serif
+                    .bold
+                        font-family: 'Archivo Black', sans-serif
+            .redes
+                color: white
+                text-align: center
+                font-size: 40px
+                display: flex
+                justify-content: center
+                a
+                    color: white
+                    margin: 20px
+                a:hover
+                    color: #C9C7C7
+                    cursor: pointer
+
+@media only screen and (max-width: 1000px)
+    #contacto
+        .description
+            padding: 0px 100px
+@media only screen and (max-width: 800px)
+    #contacto
+        .grid-contact
+            grid-template-columns: 1fr

@@ -2,7 +2,8 @@ import React from 'react';
 import './Knowledge.sass';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faAngular } from '@fortawesome/free-brands-svg-icons';
-import Bar from '../../components/bar/Bar'
+import Bar from '../../components/bar/Bar';
+import Separador from '../../components/separador/Separador';
 
 class Knowledge extends React.Component{
 
@@ -37,18 +38,8 @@ class Knowledge extends React.Component{
 
     render() {
         return (
-            <div className="contenedor">
-                <div className="separador">
-                    <div className="decoraciones">
-                        <div className="bloque1"></div>
-                        <div className="bloque2"></div>
-                    </div>
-                    <p>SERVICIOS</p>
-                    <div className="decoraciones">
-                        <div className="bloque2"></div>
-                        <div className="bloque1"></div>
-                    </div>
-                </div>
+            <div id="servicios" style={{background: "#ebebeb"}} className="contenedor">
+                <Separador titulo="SERVICIOS" />
                 <div className="conocimientos">
                     <p style={{color: "#f3642b"}}><FontAwesomeIcon icon={faHtml5} /></p>
                     <p style={{color: "#139fda"}}><FontAwesomeIcon icon={faCss3Alt} /></p>
@@ -61,7 +52,7 @@ class Knowledge extends React.Component{
                         <img src={require('../../assets/cat2.png')} alt="" />
                     </div>
                     <div className="barras">
-                        <p>MI NIVEL ESTIMADO</p>
+                        <p>STATS</p>
                         <Bar colorBarra="#f3642b" icono={faHtml5} bottom={this.state.bottom} animation="progress-html"/>
                         <Bar colorBarra="#139fda" icono={faCss3Alt} bottom={this.state.bottom} animation="progress-css"/>
                         <Bar colorBarra="#f0cd62" icono={faJsSquare} bottom={this.state.bottom} animation="progress-js"/>

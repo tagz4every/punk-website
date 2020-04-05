@@ -4,7 +4,7 @@ import "./Header.sass";
 
 const Header = () => {
     return ( 
-        <header>
+        <header id="header">
             <div className="background-color"></div>
             <div className="warning-top">
                 <div className="top"></div>
@@ -18,7 +18,7 @@ const Header = () => {
             <div className="pcloop-bottom"></div>
             <div className="grid">
                 <div className="gato">
-                    <img src={require('../../assets/cat.png')} alt=""/>
+                    <img className="left-to-right" src={require('../../assets/cat.png')} alt=""/>
                 </div>
                 <div className="logo"><img src={require('../../assets/logo.png')} alt=""/></div>
             </div>
