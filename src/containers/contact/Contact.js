@@ -4,7 +4,7 @@ import Separador from '../../components/separador/Separador';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarker, faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp, faTwitter, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faTwitter, faStackOverflow, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     return (
@@ -35,6 +35,7 @@ const Contact = () => {
                     <div className="redes">
                         <a href="https://twitter.com/Tagz4Every" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter}/></a>
                         <a href="https://es.stackoverflow.com/users/165763/tagz" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faStackOverflow}/></a>
+                        <a href="https://github.com/tagz4every" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
                     </div>
                 </div>
                 
