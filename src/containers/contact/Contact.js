@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="alternativas">
                     <div className="alternativa">
                         <p className="icon"><FontAwesomeIcon icon={faMapMarker}/></p>
-                        <p className="text"><span>Tagz4Everyone</span>Chile - Región del Bío-Bío - Concepción</p>
+                        <p className="text"><span className="bold">Tagz4Everyone</span>Chile - Región del Bío-Bío - Concepción</p>
                     </div>
                     <div className="alternativa">
                         <p className="icon"><FontAwesomeIcon icon={faWhatsapp}/></p>
