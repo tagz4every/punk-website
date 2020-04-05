@@ -1,3 +1,7 @@
+## Check out the preview
+Click [Here](https://tagz4portfolio.000webhostapp.com/) to see how my website looks.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
